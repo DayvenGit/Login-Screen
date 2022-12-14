@@ -17,18 +17,31 @@ body {
 .login_card {
   border-radius: 15px;
   background-color: rgba(172, 172, 172, 0.363);
-  width: 500px;
-  height: 600px;
+  width: 550px;
+  height: 650px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
+  box-shadow: 0 2px 4px 1px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px 0;
 }
 
 .yin_logo {
   width: 125px;
-  margin-bottom: 2rem;
+}
+
+h1 {
+  padding: 1rem 0 1rem 0;
+  text-align: center;
 }
 
 ::placeholder {
@@ -81,7 +94,6 @@ input {
   font-weight: 500;
   font-size: 1rem;
   color: black;
-  transition: 1.5s ease-in-out;
 }
 
 .fmp:hover {
@@ -91,12 +103,39 @@ input {
   transition: 1.5s ease-in-out;
 }
 
+.sign_in {
+  margin-top: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.sign_btn {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: .5rem 2rem;
+  color: black;
+  transition-duration: 500ms;
+  transition-property: background;
+  transition: 500ms ease;
+  text-transform: uppercase;
+}
+
+.sign_btn:hover {
+  transform: translateY(2px);
+  cursor: pointer;
+  background-image: linear-gradient(to right, rgb(10, 13, 218), rgba(54, 0, 202, 0.60));
+  color: white;
+}
+
 .create_acc {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .login_with {
   margin-top: 1rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 
@@ -115,8 +154,20 @@ input {
 }
 
 .google_logo,
-.facebook_logo{
+.facebook_logo {
   text-decoration: none;
+}
+
+.fa-brands.fa-google:hover {
+  transform: translateY(2px);
+  cursor: pointer;
+  transition: .25s ease;
+}
+
+.fa-brands.fa-facebook:hover {
+  transform: translateY(2px);
+  cursor: pointer;
+  transition: .25s ease;
 }
 
 .fa-brands.fa-facebook,
